@@ -15,7 +15,10 @@ module uart_led_tb;
     uart_rx_test dut(.clk(clk), .reset_n(reset_n),
                      .uart_rx(uart_rx), .uart_tx(uart_tx), .led(led));
 
-    always @(led) if(reset_n) changes = changes + 1;
+    always @(led) if(reset_n) begin
+        changes = changes + 1;
+        if(led[0] !== 1'b0) $fatal(1, "LED0 must remain disabled");
+    end
 
     task send_byte;
         input [7:0] value;
@@ -30,7 +33,10 @@ module uart_led_tb;
             uart_rx = 1'b1;
             #BIT_NS;
             if(value >= 8'h30 && value <= 8'h37) begin
-                expected[7:0] = 8'b1 << (value - 8'h30);
+                if(value == "0")
+                    expected[7:0] = 8'd0;
+                else
+                    expected[7:0] = 8'b1 << (value - 8'h30);
                 expected[8] = ~expected[8];
                 commands = commands + 1;
             end

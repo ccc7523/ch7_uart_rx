@@ -1,7 +1,7 @@
 //
 //Written by GowinSynthesis
 //Tool Version "V1.9.12.03 (64-bit)"
-//Wed Oct 14 21:48:50 2026
+//Thu Oct 15 15:33:49 2026
 
 //Source file index table:
 //file0 "\D:/Gowin/FPGA\ game/ch7_uart_rx/src/uart_byte_rx.v"
@@ -1615,19 +1615,18 @@ wire uart_rx_d;
 wire \o[3]_7 ;
 wire \o[2]_7 ;
 wire \o[1]_7 ;
-wire \o[0]_7 ;
 wire \o[7]_7 ;
 wire \o[6]_7 ;
 wire \o[5]_7 ;
 wire \o[4]_7 ;
 wire n11_7;
 wire \o[3]_8 ;
-wire \o[7]_8 ;
+wire \o[1]_8 ;
 wire n26_10;
 wire n11_9;
 wire n7_11;
 wire rx_done_Z;
-wire [8:0] led_d;
+wire [8:1] led_d;
 wire [7:0] data_byte_rx;
 wire VCC;
 wire GND;
@@ -1649,7 +1648,7 @@ wire GND;
 );
   OBUF led_0_obuf (
     .O(led[0]),
-    .I(led_d[0]) 
+    .I(GND) 
 );
   OBUF led_1_obuf (
     .O(led[1]),
@@ -1685,60 +1684,53 @@ wire GND;
 );
   LUT3 \o[3]_s2  (
     .F(\o[3]_7 ),
-    .I0(data_byte_rx[1]),
+    .I0(data_byte_rx[2]),
     .I1(data_byte_rx[0]),
     .I2(\o[3]_8 ) 
 );
-defparam \o[3]_s2 .INIT=8'h80;
+defparam \o[3]_s2 .INIT=8'h40;
   LUT3 \o[2]_s2  (
     .F(\o[2]_7 ),
-    .I0(data_byte_rx[0]),
-    .I1(data_byte_rx[1]),
+    .I0(data_byte_rx[2]),
+    .I1(data_byte_rx[0]),
     .I2(\o[3]_8 ) 
 );
-defparam \o[2]_s2 .INIT=8'h40;
+defparam \o[2]_s2 .INIT=8'h10;
   LUT3 \o[1]_s2  (
     .F(\o[1]_7 ),
-    .I0(data_byte_rx[1]),
+    .I0(data_byte_rx[2]),
     .I1(data_byte_rx[0]),
-    .I2(\o[3]_8 ) 
+    .I2(\o[1]_8 ) 
 );
 defparam \o[1]_s2 .INIT=8'h40;
-  LUT3 \o[0]_s2  (
-    .F(\o[0]_7 ),
-    .I0(data_byte_rx[1]),
-    .I1(data_byte_rx[0]),
-    .I2(\o[3]_8 ) 
-);
-defparam \o[0]_s2 .INIT=8'h10;
   LUT3 \o[7]_s2  (
     .F(\o[7]_7 ),
-    .I0(data_byte_rx[1]),
+    .I0(data_byte_rx[2]),
     .I1(data_byte_rx[0]),
-    .I2(\o[7]_8 ) 
+    .I2(\o[3]_8 ) 
 );
 defparam \o[7]_s2 .INIT=8'h80;
   LUT3 \o[6]_s2  (
     .F(\o[6]_7 ),
     .I0(data_byte_rx[0]),
-    .I1(data_byte_rx[1]),
-    .I2(\o[7]_8 ) 
+    .I1(data_byte_rx[2]),
+    .I2(\o[3]_8 ) 
 );
 defparam \o[6]_s2 .INIT=8'h40;
   LUT3 \o[5]_s2  (
     .F(\o[5]_7 ),
-    .I0(data_byte_rx[1]),
+    .I0(data_byte_rx[2]),
     .I1(data_byte_rx[0]),
-    .I2(\o[7]_8 ) 
+    .I2(\o[1]_8 ) 
 );
-defparam \o[5]_s2 .INIT=8'h40;
+defparam \o[5]_s2 .INIT=8'h80;
   LUT3 \o[4]_s2  (
     .F(\o[4]_7 ),
-    .I0(data_byte_rx[1]),
-    .I1(data_byte_rx[0]),
-    .I2(\o[7]_8 ) 
+    .I0(data_byte_rx[0]),
+    .I1(data_byte_rx[2]),
+    .I2(\o[1]_8 ) 
 );
-defparam \o[4]_s2 .INIT=8'h10;
+defparam \o[4]_s2 .INIT=8'h40;
   LUT4 n11_s2 (
     .F(n11_7),
     .I0(data_byte_rx[3]),
@@ -1749,18 +1741,18 @@ defparam \o[4]_s2 .INIT=8'h10;
 defparam n11_s2.INIT=16'h1000;
   LUT3 \o[3]_s3  (
     .F(\o[3]_8 ),
-    .I0(data_byte_rx[2]),
-    .I1(data_byte_rx[7]),
-    .I2(n11_7) 
-);
-defparam \o[3]_s3 .INIT=8'h10;
-  LUT3 \o[7]_s3  (
-    .F(\o[7]_8 ),
     .I0(data_byte_rx[7]),
-    .I1(data_byte_rx[2]),
+    .I1(data_byte_rx[1]),
     .I2(n11_7) 
 );
-defparam \o[7]_s3 .INIT=8'h40;
+defparam \o[3]_s3 .INIT=8'h40;
+  LUT3 \o[1]_s3  (
+    .F(\o[1]_8 ),
+    .I0(data_byte_rx[7]),
+    .I1(data_byte_rx[1]),
+    .I2(n11_7) 
+);
+defparam \o[1]_s3 .INIT=8'h10;
   LUT4 n26_s3 (
     .F(n26_10),
     .I0(data_byte_rx[7]),
@@ -1821,13 +1813,6 @@ defparam n11_s3.INIT=8'h40;
   DFFCE led_1_s1 (
     .Q(led_d[1]),
     .D(\o[1]_7 ),
-    .CLK(clk_d),
-    .CLEAR(n7_11),
-    .CE(n11_9) 
-);
-  DFFCE led_0_s1 (
-    .Q(led_d[0]),
-    .D(\o[0]_7 ),
     .CLK(clk_d),
     .CLEAR(n7_11),
     .CE(n11_9) 

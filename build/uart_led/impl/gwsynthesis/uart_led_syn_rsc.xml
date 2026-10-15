@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="uart_rx_test" Register="9" Lut="14" T_Register="78(9)" T_Lut="138(14)">
+<Module name="uart_rx_test" Register="8" Lut="13" T_Register="77(8)" T_Lut="137(13)">
  <SubModule name="uart_byte_rx" Register="69" Lut="124" T_Register="69(69)" T_Lut="124(124)"/>
 </Module>

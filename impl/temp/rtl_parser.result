@@ -9,7 +9,7 @@
         "SubInsts": [
             {
                 "InstFile": "D:/Gowin/FPGA game/ch7_uart_rx/src/uart_rx_test.v",
-                "InstLine": 25,
+                "InstLine": 26,
                 "InstName": "uart_byte_rx",
                 "ModuleFile": "D:/Gowin/FPGA game/ch7_uart_rx/src/uart_byte_rx.v",
                 "ModuleLine": 20,
