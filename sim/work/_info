@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dH:/01_gaoyun/gao_project/06_uart_tx/uart_tx/sim
+T_opt
+!s110 1692946174
+VAhACjQ>RFX927??kk_>DI2
+Z1 04 15 4 work uart_byte_rx_tb fast 0
+=5-1ca0b877e192-64e84efe-b2-538
+o-quiet -auto_acc_if_foreign -work work -L gw5a -Lf gw5a +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;10.7;67
+R0
+T_opt1
+!s110 1731642065
+VoWCX1o?0AM;oDlT=8FoS33
+R1
+=1-d4d853392ad8-6736c2d1-24d-3b20
+o-quiet -auto_acc_if_foreign -work work -L G:/modelsim/gw5at -Lf G:/modelsim/gw5at +acc
+R2
+n@_opt1
+OL;O;10.6d;65
+vuart_byte_rx
+Z3 !s110 1731642031
+!i10b 1
+!s100 z9e4=nWA5d`]O6ajYKnWX2
+Io`XPLdXKWh5F8ZEI4@<Yf0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 dD:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/sim
+w1731641873
+8D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_rx.v
+FD:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_rx.v
+Z6 L0 20
+Z7 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z8 !s108 1731642031.000000
+!s107 D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_rx.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_rx.v|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vuart_byte_rx_tb
+R3
+!i10b 1
+!s100 o^oTS?m[VZ][eGQlh?NWD1
+I7H[zEAVWZ_;Kn9hO5VzHH0
+R4
+R5
+w1692943630
+8D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_rx_tb.v
+FD:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_rx_tb.v
+L0 22
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_rx_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_rx_tb.v|
+!i113 0
+R9
+R2
+vuart_byte_tx
+R3
+!i10b 1
+!s100 1mM=Uag`nOZDEoo2Z;9ca0
+I5CRUM7a=cUFc`GfH:NdE31
+R4
+R5
+w1687763673
+8D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_tx.v
+FD:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_tx.v
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_tx.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|D:/work/waresoft/Gowin2/workspace/720-138K/ch7_uart_rx/src/uart_byte_tx.v|
+!i113 0
+R9
+R2

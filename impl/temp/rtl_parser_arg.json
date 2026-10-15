@@ -1,0 +1,28 @@
+{
+    "Device": "GW5AT-60B",
+    "Files": [
+        {
+            "Path": "D:/Gowin/FPGA game/ch7_uart_rx/src/uart_byte_rx.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "D:/Gowin/FPGA game/ch7_uart_rx/src/uart_byte_rx_tb.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "D:/Gowin/FPGA game/ch7_uart_rx/src/uart_byte_tx.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "D:/Gowin/FPGA game/ch7_uart_rx/src/uart_rx_test.v",
+            "Type": "verilog"
+        }
+    ],
+    "IncludePath": [
+    ],
+    "LoopLimit": 2000,
+    "ResultFile": "D:/Gowin/FPGA game/ch7_uart_rx/impl/temp/rtl_parser.result",
+    "Top": "uart_rx_test",
+    "VerilogStd": "verilog_2001",
+    "VhdlStd": "vhdl_93"
+}

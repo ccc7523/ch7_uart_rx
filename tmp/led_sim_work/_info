@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Gowin/FPGA game/ch7_uart_rx
+T_opt
+!s110 1791985514
+V5`C3hXh`b5eIQ7UX4L5[B0
+04 11 4 work uart_led_tb fast 0
+=1-d4d853392ad8-6acf8769-34e-6258
+o-quiet -auto_acc_if_foreign -work tmp/led_sim_work
+Z1 tCvgOpt 0
+n@_opt
+OL;O;10.7;67
+vuart_byte_rx
+Z2 !s110 1791985513
+!i10b 1
+!s100 J]oKI2@k@6JA?iOl:V?zj1
+ID1S;U^aT7N^lKoYI3QHj@0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1731641874
+8src/uart_byte_rx.v
+Fsrc/uart_byte_rx.v
+L0 20
+Z4 OL;L;10.7;67
+r1
+!s85 0
+31
+Z5 !s108 1791985513.000000
+Z6 !s107 tests/uart_led_tb.v|src/uart_rx_test.v|src/uart_byte_rx.v|
+Z7 !s90 -work|tmp/led_sim_work|src/uart_byte_rx.v|src/uart_rx_test.v|tests/uart_led_tb.v|
+!i113 0
+Z8 o-work tmp/led_sim_work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vuart_led_tb
+R2
+!i10b 1
+!s100 Oi`>Knmiz9U?Pi?hQ_:RY0
+IWzKiOJ?o=GRI:OVjaQ]:m1
+R3
+R0
+w1791985510
+8tests/uart_led_tb.v
+Ftests/uart_led_tb.v
+L0 2
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
+vuart_rx_test
+R2
+!i10b 1
+!s100 oSa`izIkj2^Y0246h5E3g2
+IM>Rdl_1KJ4Z1hZSoU7T?b3
+R3
+R0
+w1791985508
+8src/uart_rx_test.v
+Fsrc/uart_rx_test.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 0
+R8
+R1
