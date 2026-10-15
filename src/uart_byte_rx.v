@@ -213,6 +213,8 @@ module uart_byte_rx(
 	else if(rx_done || (bps_cnt == 8'd12 && (START_BIT > 2)) || (bps_cnt == 8'd155 && (STOP_BIT < 3)))
 		uart_state <= 1'b0;
 	else
-		uart_state <= uart_state;		
+		uart_state <= uart_state;	
+
+		//	这个是无效的注释
 
 endmodule
